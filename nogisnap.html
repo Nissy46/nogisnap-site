@@ -84,10 +84,16 @@
       color: #6a0dad;
       margin-top: 0;
       letter-spacing: 1px;
+      font-size: 1.25em;
+    }
+    .table-scroll {
+      overflow-x: auto;
+      margin-bottom: 8px;
     }
     table {
       border-collapse: collapse;
       width: 100%;
+      min-width: 430px;
       margin-top: 10px;
       background: white;
       border-radius: 8px;
@@ -105,6 +111,7 @@
       text-align: left;
       font-size: 1em;
       transition: background 0.2s;
+      white-space: nowrap;
     }
     th {
       background-color: #ede0f7;
@@ -166,9 +173,11 @@
       color: #fff;
     }
     @media (max-width: 650px) {
-      main { padding: 10px 3vw 18px 3vw;}
-      h2 { font-size: 1.08em;}
-      th, td { font-size: 0.96em;}
+      main { padding: 7px 1vw 16px 1vw;}
+      h2 { font-size: 1em; }
+      th, td { font-size: 0.92em; padding: 8px 5px;}
+      .tipBtn { font-size: 0.93em; padding: 5px 10px; }
+      nav a { font-size: 0.98em; }
     }
     #member-colors input { margin-bottom: 16px; }
   </style>
@@ -193,49 +202,51 @@
       <h2>自己紹介</h2>
       <p>はじめまして、nissyです！推しは4期生の林瑠奈ちゃんです。<br>
       落ち着いた雰囲気の中に見える独特な感性と、ふとした瞬間に見せる表情の破壊力にやられて以来、ずっと推しています。<br>
-      林瑠奈ちゃん推しとしてはこの夏特に『さざ波は戻らない』を聴きたくなりますよねぇ。<br>
-      あ、もちろん他の曲も聴きますよ？笑<br>
       さて、今回はそんな私が全国ツアーをより楽しむための事前準備についてまとめてみました！<br>
-      ライブ常連者の方も新規参戦の方も、本記事を参考に今年の夏を最高に盛り上げる準備をしていきましょ〜！</p>
+      ライブ常連者の方も初めて参戦する方も、本記事を参考に今年の夏を最高に盛り上げる準備をしていきましょ〜！</p>
     </section>
 
     <section id="schedule">
       <h2>真夏の全国ツアー2025 スケジュール</h2>
-      <table>
-        <tr><th>都市</th><th>会場</th><th>日付</th><th>開場／開演</th></tr>
-        <tr><td>北海道</td><td>真駒内セキスイハイムアイスアリーナ</td><td>7/5 (土)</td><td>16:00／17:30</td></tr>
-        <tr><td>北海道</td><td>同上</td><td>7/6 (日)</td><td>15:00／16:30</td></tr>
-        <tr><td>静岡</td><td>エコパアリーナ</td><td>7/12 (土)</td><td>16:00／17:30</td></tr>
-        <tr><td>静岡</td><td>同上</td><td>7/13 (日)</td><td>15:00／16:30</td></tr>
-        <tr><td>大阪</td><td>大阪城ホール</td><td>7/16 (水)</td><td>16:30／18:00</td></tr>
-        <tr><td>大阪</td><td>同上</td><td>7/17 (木)</td><td>16:30／18:00</td></tr>
-        <tr><td>宮城</td><td>セキスイハイムスーパーアリーナ</td><td>8/2 (土)</td><td>16:00／17:30</td></tr>
-        <tr><td>宮城</td><td>同上</td><td>8/3 (日)</td><td>15:00／16:30</td></tr>
-        <tr><td>福岡</td><td>マリンメッセ福岡A館</td><td>8/9 (土)</td><td>16:00／17:30</td></tr>
-        <tr><td>福岡</td><td>同上</td><td>8/10 (日)</td><td>15:00／16:30</td></tr>
-        <tr><td>香川</td><td>あなぶきアリーナ香川</td><td>8/16 (土)</td><td>16:00／17:30</td></tr>
-        <tr><td>香川</td><td>同上</td><td>8/17 (日)</td><td>15:00／16:30</td></tr>
-        <tr><td>東京</td><td>明治神宮野球場</td><td>9/4 (木)</td><td>15:30／18:00</td></tr>
-        <tr><td>東京</td><td>同上</td><td>9/5 (金)</td><td>15:30／18:00</td></tr>
-        <tr><td>東京</td><td>同上</td><td>9/6 (土)</td><td>15:30／18:00</td></tr>
-        <tr><td>東京</td><td>同上</td><td>9/7 (日)</td><td>15:30／18:00</td></tr>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <tr><th>都市</th><th>会場</th><th>日付</th><th>開場／開演</th></tr>
+          <tr><td>北海道</td><td>真駒内セキスイハイムアイスアリーナ</td><td>7/5 (土)</td><td>16:00／17:30</td></tr>
+          <tr><td>北海道</td><td>同上</td><td>7/6 (日)</td><td>15:00／16:30</td></tr>
+          <tr><td>静岡</td><td>エコパアリーナ</td><td>7/12 (土)</td><td>16:00／17:30</td></tr>
+          <tr><td>静岡</td><td>同上</td><td>7/13 (日)</td><td>15:00／16:30</td></tr>
+          <tr><td>大阪</td><td>大阪城ホール</td><td>7/16 (水)</td><td>16:30／18:00</td></tr>
+          <tr><td>大阪</td><td>同上</td><td>7/17 (木)</td><td>16:30／18:00</td></tr>
+          <tr><td>宮城</td><td>セキスイハイムスーパーアリーナ</td><td>8/2 (土)</td><td>16:00／17:30</td></tr>
+          <tr><td>宮城</td><td>同上</td><td>8/3 (日)</td><td>15:00／16:30</td></tr>
+          <tr><td>福岡</td><td>マリンメッセ福岡A館</td><td>8/9 (土)</td><td>16:00／17:30</td></tr>
+          <tr><td>福岡</td><td>同上</td><td>8/10 (日)</td><td>15:00／16:30</td></tr>
+          <tr><td>香川</td><td>あなぶきアリーナ香川</td><td>8/16 (土)</td><td>16:00／17:30</td></tr>
+          <tr><td>香川</td><td>同上</td><td>8/17 (日)</td><td>15:00／16:30</td></tr>
+          <tr><td>東京</td><td>明治神宮野球場</td><td>9/4 (木)</td><td>15:30／18:00</td></tr>
+          <tr><td>東京</td><td>同上</td><td>9/5 (金)</td><td>15:30／18:00</td></tr>
+          <tr><td>東京</td><td>同上</td><td>9/6 (土)</td><td>15:30／18:00</td></tr>
+          <tr><td>東京</td><td>同上</td><td>9/7 (日)</td><td>15:30／18:00</td></tr>
+        </table>
+      </div>
     </section>
 
     <section id="items">
       <h2>1. 必須の持ち物リスト</h2>
-      <table>
-        <tr><th>アイテム</th><th>理由・ポイント</th></tr>
-        <tr><td>チケット（スマホ or 紙）</td><td>チケットがないと中にも入れません。必ず持参！</td></tr>
-        <tr><td>身分証明書 <span class="highlight">必須</span></td><td>本人確認が必ずあります。<b>顔写真付き身分証明証が必須</b>です。</td></tr>
-        <tr><td>モバイルバッテリー</td><td>長時間の待機・会場周りの撮影に備えよう。10000mAh以上がおすすめ。</td></tr>
-        <tr><td>サイリウム(2本〜)</td><td>推しカラーで気持ちを届けよう。会場の一体感も演出。複数本持っている人も多い。</td></tr>
-        <tr><td>推しタオル・推しうちわ</td><td>推しアピールにも最適。タオルは熱中症対策にも使える。</td></tr>
-        <tr><td>スケッチブック</td><td>メッセージやファンサアピール、うちわの代用として使う人も増加中。</td></tr>
-        <tr><td>双眼鏡</td><td>遠い席でもメンバーの表情をしっかりチェックできる。高倍率すぎると手ブレしやすいので注意。</td></tr>
-        <tr><td>飲み物・軽食</td><td>屋外会場では必須。水分補給とエネルギー補給はしっかりと。</td></tr>
-        <tr><td>楽しむ気持ち！</td><td>チケットと楽しむ気持ちさえあれば最悪OKです！笑</td></tr>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <tr><th>アイテム</th><th>理由・ポイント</th></tr>
+          <tr><td>チケット（スマホ or 紙）</td><td>チケットがないと中にも入れません。必ず持参！</td></tr>
+          <tr><td>身分証明書 <span class="highlight">必須</span></td><td>本人確認が必ずあります。<b>顔写真付き身分証明証が必須</b>です。</td></tr>
+          <tr><td>モバイルバッテリー</td><td>長時間の待機・会場周りの撮影に備えよう。10000mAh以上がおすすめ。</td></tr>
+          <tr><td>サイリウム(2本〜)</td><td>推しカラーで気持ちを届けよう。会場の一体感も演出。複数本持っている人も多い。</td></tr>
+          <tr><td>推しタオル・推しうちわ</td><td>推しアピールにも最適。タオルは熱中症対策にも使える。</td></tr>
+          <tr><td>スケッチブック</td><td>メッセージやファンサアピール、うちわの代用として使う人も増加中。</td></tr>
+          <tr><td>双眼鏡</td><td>遠い席でもメンバーの表情をしっかりチェックできる。高倍率すぎると手ブレしやすいので注意。</td></tr>
+          <tr><td>飲み物・軽食</td><td>屋外会場では必須。水分補給とエネルギー補給はしっかりと。</td></tr>
+          <tr><td>楽しむ気持ち！</td><td>チケットと楽しむ気持ちさえあれば最悪OKです！笑</td></tr>
+        </table>
+      </div>
       <div class="tipBtn">Tip: グッズは事前通販で買っておくと当日楽！</div>
       <p>
         夏の屋外会場では想像以上に暑くなるため、<b>日傘・冷却スプレー・帽子</b>などの暑さ対策グッズも大切です。<br>
@@ -274,57 +285,59 @@
     <section id="member-colors">
       <h2>4. メンバー別コール名＆サイリウムカラー検索</h2>
       <input type="text" id="searchInput" placeholder="名前・期生・コール名で検索" style="width:100%;padding:10px;font-size:1em;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
-      <table id="memberTable">
-        <thead>
-          <tr><th>期生</th><th>名前</th><th>コール名</th><th>サイリウムカラー</th></tr>
-        </thead>
-        <tbody>
-          <!-- 3期生 -->
-          <tr><td>3期生</td><td>伊藤理々杏</td><td>りりあ</td><td>紫×赤</td></tr>
-          <tr><td>3期生</td><td>岩本蓮加</td><td>れんたん</td><td>赤×ピンク</td></tr>
-          <tr><td>3期生</td><td>梅澤美波</td><td>みなみん</td><td>青×水色</td></tr>
-          <tr><td>3期生</td><td>久保史緒里</td><td>しおり</td><td>水色×黄</td></tr>
-          <tr><td>3期生</td><td>佐藤楓</td><td>でんちゃん</td><td>赤×赤</td></tr>
-          <tr><td>3期生</td><td>吉田綾乃クリスティー</td><td>あやてぃー</td><td>ピンク×紫</td></tr>
-          <!-- 4期生 -->
-          <tr><td>4期生</td><td>遠藤さくら</td><td>さくら</td><td>ピンク×白</td></tr>
-          <tr><td>4期生</td><td>賀喜遥香</td><td>かっきー</td><td>オレンジ×緑</td></tr>
-          <tr><td>4期生</td><td>金川紗耶</td><td>やんちゃん</td><td>水色×赤</td></tr>
-          <tr><td>4期生</td><td>柴田柚菜</td><td>ゆんちゃん</td><td>青×黄緑</td></tr>
-          <tr><td>4期生</td><td>田村真佑</td><td>まゆたん</td><td>紫×水色</td></tr>
-          <tr><td>4期生</td><td>筒井あやめ</td><td>あやめん</td><td>紫×紫</td></tr>
-          <tr><td>4期生</td><td>矢久保美緒</td><td>みっちゃん</td><td>ピンク×黄</td></tr>
-          <tr><td>4期生</td><td>黒見明香</td><td>くろみん</td><td>紫×緑</td></tr>
-          <tr><td>4期生</td><td>佐藤璃果</td><td>りかちゃん</td><td>ピンク×ターコイズ</td></tr>
-          <tr><td>4期生</td><td>林瑠奈</td><td>はやし</td><td>ピンク×ピンク</td></tr>
-          <tr><td>4期生</td><td>松尾美佑</td><td>みゆちゃん</td><td>ターコイズ×白</td></tr>
-          <tr><td>4期生</td><td>弓木奈於</td><td>ゆみっきー</td><td>赤×黄緑</td></tr>
-          <!-- 5期生 -->
-          <tr><td>5期生</td><td>五百城茉央</td><td>まおちゃん</td><td>ターコイズ×青</td></tr>
-          <tr><td>5期生</td><td>池田瑛紗</td><td>てれさ</td><td>緑×白</td></tr>
-          <tr><td>5期生</td><td>一ノ瀬美空</td><td>みーきゅん</td><td>水色×水色</td></tr>
-          <tr><td>5期生</td><td>井上和</td><td>なぎちゃん</td><td>赤×白</td></tr>
-          <tr><td>5期生</td><td>岡本姫奈</td><td>ひーちゃん</td><td>紫×青</td></tr>
-          <tr><td>5期生</td><td>小川彩</td><td>あーや</td><td>白×白</td></tr>
-          <tr><td>5期生</td><td>奥田いろは</td><td>いろは</td><td>黄緑×ピンク</td></tr>
-          <tr><td>5期生</td><td>川﨑桜</td><td>さくたん</td><td>ピンク×緑</td></tr>
-          <tr><td>5期生</td><td>菅原咲月</td><td>さつき</td><td>ピンク×水色</td></tr>
-          <tr><td>5期生</td><td>冨里奈央</td><td>なおちゃん</td><td>ターコイズ×ターコイズ</td></tr>
-          <tr><td>5期生</td><td>中西アルノ</td><td>アルノ</td><td>水色×ターコイズ</td></tr>
-          <!-- 6期生 -->
-          <tr><td>6期生</td><td>愛宕心響</td><td>ここねん</td><td>ピンク×青</td></tr>
-          <tr><td>6期生</td><td>大越ひなの</td><td>ひなの</td><td>白×黄色</td></tr>
-          <tr><td>6期生</td><td>小津玲奈</td><td>おづちゃん</td><td>紫×ターコイズ</td></tr>
-          <tr><td>6期生</td><td>海邉朱莉</td><td>あかり</td><td>青×赤</td></tr>
-          <tr><td>6期生</td><td>川端晃菜</td><td>ひーつん</td><td>緑×水色</td></tr>
-          <tr><td>6期生</td><td>鈴木佑捺</td><td>ゆうな</td><td>白×水色</td></tr>
-          <tr><td>6期生</td><td>瀬戸口心月</td><td>みつき</td><td>青×黄色</td></tr>
-          <tr><td>6期生</td><td>長嶋凛桜</td><td>りおたん</td><td>ピンク×オレンジ</td></tr>
-          <tr><td>6期生</td><td>増田三莉音</td><td>みりね</td><td>青×青</td></tr>
-          <tr><td>6期生</td><td>森平麗心</td><td>うるみん</td><td>黄色×黄色</td></tr>
-          <tr><td>6期生</td><td>矢田萌華</td><td>やだちゃん</td><td>白×紫</td></tr>
-        </tbody>
-      </table>
+      <div class="table-scroll">
+        <table id="memberTable">
+          <thead>
+            <tr><th>期生</th><th>名前</th><th>コール名</th><th>サイリウムカラー</th></tr>
+          </thead>
+          <tbody>
+            <!-- 3期生 -->
+            <tr><td>3期生</td><td>伊藤理々杏</td><td>りりあ</td><td>紫×赤</td></tr>
+            <tr><td>3期生</td><td>岩本蓮加</td><td>れんたん</td><td>赤×ピンク</td></tr>
+            <tr><td>3期生</td><td>梅澤美波</td><td>みなみん</td><td>青×水色</td></tr>
+            <tr><td>3期生</td><td>久保史緒里</td><td>しおり</td><td>水色×黄</td></tr>
+            <tr><td>3期生</td><td>佐藤楓</td><td>でんちゃん</td><td>赤×赤</td></tr>
+            <tr><td>3期生</td><td>吉田綾乃クリスティー</td><td>あやてぃー</td><td>ピンク×紫</td></tr>
+            <!-- 4期生 -->
+            <tr><td>4期生</td><td>遠藤さくら</td><td>さくら</td><td>ピンク×白</td></tr>
+            <tr><td>4期生</td><td>賀喜遥香</td><td>かっきー</td><td>オレンジ×緑</td></tr>
+            <tr><td>4期生</td><td>金川紗耶</td><td>やんちゃん</td><td>水色×赤</td></tr>
+            <tr><td>4期生</td><td>柴田柚菜</td><td>ゆんちゃん</td><td>青×黄緑</td></tr>
+            <tr><td>4期生</td><td>田村真佑</td><td>まゆたん</td><td>紫×水色</td></tr>
+            <tr><td>4期生</td><td>筒井あやめ</td><td>あやめん</td><td>紫×紫</td></tr>
+            <tr><td>4期生</td><td>矢久保美緒</td><td>みっちゃん</td><td>ピンク×黄</td></tr>
+            <tr><td>4期生</td><td>黒見明香</td><td>くろみん</td><td>紫×緑</td></tr>
+            <tr><td>4期生</td><td>佐藤璃果</td><td>りかちゃん</td><td>ピンク×ターコイズ</td></tr>
+            <tr><td>4期生</td><td>林瑠奈</td><td>はやし</td><td>ピンク×ピンク</td></tr>
+            <tr><td>4期生</td><td>松尾美佑</td><td>みゆちゃん</td><td>ターコイズ×白</td></tr>
+            <tr><td>4期生</td><td>弓木奈於</td><td>ゆみっきー</td><td>赤×黄緑</td></tr>
+            <!-- 5期生 -->
+            <tr><td>5期生</td><td>五百城茉央</td><td>まおちゃん</td><td>ターコイズ×青</td></tr>
+            <tr><td>5期生</td><td>池田瑛紗</td><td>てれさ</td><td>緑×白</td></tr>
+            <tr><td>5期生</td><td>一ノ瀬美空</td><td>みーきゅん</td><td>水色×水色</td></tr>
+            <tr><td>5期生</td><td>井上和</td><td>なぎちゃん</td><td>赤×白</td></tr>
+            <tr><td>5期生</td><td>岡本姫奈</td><td>ひーちゃん</td><td>紫×青</td></tr>
+            <tr><td>5期生</td><td>小川彩</td><td>あーや</td><td>白×白</td></tr>
+            <tr><td>5期生</td><td>奥田いろは</td><td>いろは</td><td>黄緑×ピンク</td></tr>
+            <tr><td>5期生</td><td>川﨑桜</td><td>さくたん</td><td>ピンク×緑</td></tr>
+            <tr><td>5期生</td><td>菅原咲月</td><td>さつき</td><td>ピンク×水色</td></tr>
+            <tr><td>5期生</td><td>冨里奈央</td><td>なおちゃん</td><td>ターコイズ×ターコイズ</td></tr>
+            <tr><td>5期生</td><td>中西アルノ</td><td>アルノ</td><td>水色×ターコイズ</td></tr>
+            <!-- 6期生 -->
+            <tr><td>6期生</td><td>愛宕心響</td><td>ここねん</td><td>ピンク×青</td></tr>
+            <tr><td>6期生</td><td>大越ひなの</td><td>ひなの</td><td>白×黄色</td></tr>
+            <tr><td>6期生</td><td>小津玲奈</td><td>おづちゃん</td><td>紫×ターコイズ</td></tr>
+            <tr><td>6期生</td><td>海邉朱莉</td><td>あかり</td><td>青×赤</td></tr>
+            <tr><td>6期生</td><td>川端晃菜</td><td>ひーつん</td><td>緑×水色</td></tr>
+            <tr><td>6期生</td><td>鈴木佑捺</td><td>ゆうな</td><td>白×水色</td></tr>
+            <tr><td>6期生</td><td>瀬戸口心月</td><td>みつき</td><td>青×黄色</td></tr>
+            <tr><td>6期生</td><td>長嶋凛桜</td><td>りおたん</td><td>ピンク×オレンジ</td></tr>
+            <tr><td>6期生</td><td>増田三莉音</td><td>みりね</td><td>青×青</td></tr>
+            <tr><td>6期生</td><td>森平麗心</td><td>うるみん</td><td>黄色×黄色</td></tr>
+            <tr><td>6期生</td><td>矢田萌華</td><td>やだちゃん</td><td>白×紫</td></tr>
+          </tbody>
+        </table>
+      </div>
       <script>
         const input = document.getElementById('searchInput');
         input.addEventListener('keyup', function() {
