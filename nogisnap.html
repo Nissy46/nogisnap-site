@@ -394,45 +394,56 @@
           });
         });
       </script>
-      <script>
-  // サイリウムカラー列にカラフルな丸アイコンを表示
+     <script>
+  // サイリウムカラー列にカラフルな丸アイコンと色名を表示
   document.addEventListener("DOMContentLoaded", function () {
     const rows = document.querySelectorAll("#memberTable tbody tr");
     rows.forEach(row => {
       const colorCell = row.cells[3]; // サイリウムカラーの列
-      const colors = colorCell.textContent.split("×").map(c => c.trim());
-      colorCell.innerHTML = colors.map(color => `
-        <span style="
-          display:inline-block;
-          width:16px;
-          height:16px;
-          border-radius:50%;
-          background:${convertToCSSColor(color)};
-          margin-right:5px;
-          border:1px solid #ccc;
-        " title="${color}"></span>
-      `).join("");
-    });
+      const rawText = colorCell.textContent.trim();
+      const colors = rawText.split("×").map(c => c.trim());
+      colorCell.innerHTML = colors.map(color => {
+        const cssColor = convertToCSSColor(color);
+        return `
+          <span style="
+            display:inline-flex;
+            align-items:center;
+            gap:4px;
+            margin-right:8px;
+          ">
+            <span style="
+              display:inline-block;
+              width:14px;
+              height:14px;
+              border-radius:50%;
+              background:${cssColor};
+              border:1px solid #ccc;
+            " title="${color}"></span>
+            <span style="font-size:0.85em;">${color}</span>
+          </span>
+        `;
+      }).join("");
 
-    // 日本語カラー名をCSSカラーコードに変換する簡易関数
-    function convertToCSSColor(name) {
-      const map = {
-        赤: 'red',
-        青: 'blue',
-        緑: 'green',
-        黄: 'yellow',
-        黄色: 'yellow',
-        ピンク: 'pink',
-        紫: 'purple',
-        白: 'white',
-        黒: 'black',
-        水色: 'skyblue',
-        ターコイズ: 'turquoise',
-        オレンジ: 'orange',
-        黄緑: 'limegreen',
-      };
-      return map[name] || name;
-    }
+      // 日本語カラー名をCSSカラーコードに変換する簡易関数
+      function convertToCSSColor(name) {
+        const map = {
+          赤: 'red',
+          青: 'blue',
+          緑: 'green',
+          黄: 'yellow',
+          黄色: 'yellow',
+          ピンク: 'pink',
+          紫: 'purple',
+          白: 'white',
+          黒: 'black',
+          水色: 'skyblue',
+          ターコイズ: 'turquoise',
+          オレンジ: 'orange',
+          黄緑: 'limegreen',
+        };
+        return map[name] || name;
+      }
+    });
   });
 </script>
     </section>
