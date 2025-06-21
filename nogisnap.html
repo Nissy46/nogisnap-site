@@ -1,5 +1,3 @@
-下記のコードにマージして
-【コード】
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -396,6 +394,47 @@
           });
         });
       </script>
+      <script>
+  // サイリウムカラー列にカラフルな丸アイコンを表示
+  document.addEventListener("DOMContentLoaded", function () {
+    const rows = document.querySelectorAll("#memberTable tbody tr");
+    rows.forEach(row => {
+      const colorCell = row.cells[3]; // サイリウムカラーの列
+      const colors = colorCell.textContent.split("×").map(c => c.trim());
+      colorCell.innerHTML = colors.map(color => `
+        <span style="
+          display:inline-block;
+          width:16px;
+          height:16px;
+          border-radius:50%;
+          background:${convertToCSSColor(color)};
+          margin-right:5px;
+          border:1px solid #ccc;
+        " title="${color}"></span>
+      `).join("");
+    });
+
+    // 日本語カラー名をCSSカラーコードに変換する簡易関数
+    function convertToCSSColor(name) {
+      const map = {
+        赤: 'red',
+        青: 'blue',
+        緑: 'green',
+        黄: 'yellow',
+        黄色: 'yellow',
+        ピンク: 'pink',
+        紫: 'purple',
+        白: 'white',
+        黒: 'black',
+        水色: 'skyblue',
+        ターコイズ: 'turquoise',
+        オレンジ: 'orange',
+        黄緑: 'limegreen',
+      };
+      return map[name] || name;
+    }
+  });
+</script>
     </section>
   </main>
 
