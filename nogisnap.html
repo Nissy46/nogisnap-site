@@ -32,31 +32,36 @@
     }
     nav {
       background: #ede0f7;
-      padding: 12px 20px;
+      padding: 12px 10px;
       text-align: center;
       box-shadow: 0 2px 4px rgba(106,13,173,0.05);
       position: sticky;
       top: 0;
       z-index: 10;
       animation: fadeInNav 1.5s;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
     @keyframes fadeInNav {
       from { opacity: 0; }
       to { opacity: 1; }
     }
     nav a {
-      margin: 0 12px;
+      background: #fff;
       color: #6a0dad;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
-      font-size: 1.1em;
-      padding: 3px 8px;
-      border-radius: 8px;
+      padding: 8px 12px;
+      border: 2px solid #6a0dad;
+      border-radius: 30px;
+      font-size: 0.95em;
+      transition: all 0.3s;
     }
     nav a:hover {
-      color: white;
       background: #6a0dad;
+      color: white;
     }
     main {
       max-width: 900px;
@@ -197,7 +202,8 @@
         padding: 4px 8px;
       }
       nav a {
-        font-size: 0.9em;
+        font-size: 0.85em;
+        padding: 6px 10px;
       }
       #searchInput {
         font-size: 0.9em;
