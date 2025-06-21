@@ -170,6 +170,7 @@
       h2 { font-size: 1.08em;}
       th, td { font-size: 0.96em;}
     }
+    #member-colors input { margin-bottom: 16px; }
   </style>
 </head>
 <body>
@@ -184,6 +185,7 @@
     <a href="#items">必須の持ち物</a>
     <a href="#plan">参戦スケジュール</a>
     <a href="#tips">推し活Tips</a>
+    <a href="#member-colors">メンバーコール名&カラー</a>
   </nav>
 
   <main>
@@ -197,7 +199,6 @@
       ライブ常連者の方も新規参戦の方も、本記事を参考に今年の夏を最高に盛り上げる準備をしていきましょ〜！</p>
     </section>
 
-    <!-- ここから追加 -->
     <section id="schedule">
       <h2>真夏の全国ツアー2025 スケジュール</h2>
       <table>
@@ -220,7 +221,6 @@
         <tr><td>東京</td><td>同上</td><td>9/7 (日)</td><td>15:30／18:00</td></tr>
       </table>
     </section>
-    <!-- ここまで追加 -->
 
     <section id="items">
       <h2>1. 必須の持ち物リスト</h2>
@@ -269,6 +269,73 @@
       </ul>
       <p>特に最近はサイリウム芸やファンサポジションなど「現地でしか味わえない雰囲気」がSNSを通じて広まりやすく、余韻も何倍にもなります！</p>
       <p style="color:#e74c3c;font-size:0.97em;">※会場近くでの非公式なトレカ・グッズ交換会は、<b>公式で禁止されている場合や近隣への迷惑になるためおすすめしません。</b></p>
+    </section>
+
+    <section id="member-colors">
+      <h2>4. メンバー別コール名＆サイリウムカラー検索</h2>
+      <input type="text" id="searchInput" placeholder="名前・期生・コール名で検索" style="width:100%;padding:10px;font-size:1em;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
+      <table id="memberTable">
+        <thead>
+          <tr><th>期生</th><th>名前</th><th>コール名</th><th>サイリウムカラー</th></tr>
+        </thead>
+        <tbody>
+          <!-- 3期生 -->
+          <tr><td>3期生</td><td>伊藤理々杏</td><td>りりあ</td><td>紫×赤</td></tr>
+          <tr><td>3期生</td><td>岩本蓮加</td><td>れんたん</td><td>赤×ピンク</td></tr>
+          <tr><td>3期生</td><td>梅澤美波</td><td>みなみん</td><td>青×水色</td></tr>
+          <tr><td>3期生</td><td>久保史緒里</td><td>しおり</td><td>水色×黄</td></tr>
+          <tr><td>3期生</td><td>佐藤楓</td><td>でんちゃん</td><td>赤×赤</td></tr>
+          <tr><td>3期生</td><td>吉田綾乃クリスティー</td><td>あやてぃー</td><td>ピンク×紫</td></tr>
+          <!-- 4期生 -->
+          <tr><td>4期生</td><td>遠藤さくら</td><td>さくら</td><td>ピンク×白</td></tr>
+          <tr><td>4期生</td><td>賀喜遥香</td><td>かっきー</td><td>オレンジ×緑</td></tr>
+          <tr><td>4期生</td><td>金川紗耶</td><td>やんちゃん</td><td>水色×赤</td></tr>
+          <tr><td>4期生</td><td>柴田柚菜</td><td>ゆんちゃん</td><td>青×黄緑</td></tr>
+          <tr><td>4期生</td><td>田村真佑</td><td>まゆたん</td><td>紫×水色</td></tr>
+          <tr><td>4期生</td><td>筒井あやめ</td><td>あやめん</td><td>紫×紫</td></tr>
+          <tr><td>4期生</td><td>矢久保美緒</td><td>みっちゃん</td><td>ピンク×黄</td></tr>
+          <tr><td>4期生</td><td>黒見明香</td><td>くろみん</td><td>紫×緑</td></tr>
+          <tr><td>4期生</td><td>佐藤璃果</td><td>りかちゃん</td><td>ピンク×ターコイズ</td></tr>
+          <tr><td>4期生</td><td>林瑠奈</td><td>はやし</td><td>ピンク×ピンク</td></tr>
+          <tr><td>4期生</td><td>松尾美佑</td><td>みゆちゃん</td><td>ターコイズ×白</td></tr>
+          <tr><td>4期生</td><td>弓木奈於</td><td>ゆみっきー</td><td>赤×黄緑</td></tr>
+          <!-- 5期生 -->
+          <tr><td>5期生</td><td>五百城茉央</td><td>まおちゃん</td><td>ターコイズ×青</td></tr>
+          <tr><td>5期生</td><td>池田瑛紗</td><td>てれさ</td><td>緑×白</td></tr>
+          <tr><td>5期生</td><td>一ノ瀬美空</td><td>みーきゅん</td><td>水色×水色</td></tr>
+          <tr><td>5期生</td><td>井上和</td><td>なぎちゃん</td><td>赤×白</td></tr>
+          <tr><td>5期生</td><td>岡本姫奈</td><td>ひーちゃん</td><td>紫×青</td></tr>
+          <tr><td>5期生</td><td>小川彩</td><td>あーや</td><td>白×白</td></tr>
+          <tr><td>5期生</td><td>奥田いろは</td><td>いろは</td><td>黄緑×ピンク</td></tr>
+          <tr><td>5期生</td><td>川﨑桜</td><td>さくたん</td><td>ピンク×緑</td></tr>
+          <tr><td>5期生</td><td>菅原咲月</td><td>さつき</td><td>ピンク×水色</td></tr>
+          <tr><td>5期生</td><td>冨里奈央</td><td>なおちゃん</td><td>ターコイズ×ターコイズ</td></tr>
+          <tr><td>5期生</td><td>中西アルノ</td><td>アルノ</td><td>水色×ターコイズ</td></tr>
+          <!-- 6期生 -->
+          <tr><td>6期生</td><td>愛宕心響</td><td>ここねん</td><td>ピンク×青</td></tr>
+          <tr><td>6期生</td><td>大越ひなの</td><td>ひなの</td><td>白×黄色</td></tr>
+          <tr><td>6期生</td><td>小津玲奈</td><td>おづちゃん</td><td>紫×ターコイズ</td></tr>
+          <tr><td>6期生</td><td>海邉朱莉</td><td>あかり</td><td>青×赤</td></tr>
+          <tr><td>6期生</td><td>川端晃菜</td><td>ひーつん</td><td>緑×水色</td></tr>
+          <tr><td>6期生</td><td>鈴木佑捺</td><td>ゆうな</td><td>白×水色</td></tr>
+          <tr><td>6期生</td><td>瀬戸口心月</td><td>みつき</td><td>青×黄色</td></tr>
+          <tr><td>6期生</td><td>長嶋凛桜</td><td>りおたん</td><td>ピンク×オレンジ</td></tr>
+          <tr><td>6期生</td><td>増田三莉音</td><td>みりね</td><td>青×青</td></tr>
+          <tr><td>6期生</td><td>森平麗心</td><td>うるみん</td><td>黄色×黄色</td></tr>
+          <tr><td>6期生</td><td>矢田萌華</td><td>やだちゃん</td><td>白×紫</td></tr>
+        </tbody>
+      </table>
+      <script>
+        const input = document.getElementById('searchInput');
+        input.addEventListener('keyup', function() {
+          const filter = input.value.toLowerCase();
+          const rows = document.querySelectorAll('#memberTable tbody tr');
+          rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(filter) ? '' : 'none';
+          });
+        });
+      </script>
     </section>
   </main>
 
