@@ -26,8 +26,8 @@
       animation: slideDown 0.9s;
     }
     @keyframes slideDown {
-      from { transform: translateY(-60px); opacity: 0;}
-      to { transform: translateY(0); opacity: 1;}
+      from { transform: translateY(-60px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
     nav {
       background: #ede0f7;
@@ -40,8 +40,8 @@
       animation: fadeInNav 1.5s;
     }
     @keyframes fadeInNav {
-      from { opacity: 0;}
-      to { opacity: 1;}
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     nav a {
       margin: 0 12px;
@@ -67,16 +67,16 @@
       animation: fadeInMain 1.2s;
     }
     @keyframes fadeInMain {
-      from { opacity: 0; transform: translateY(30px);}
-      to { opacity: 1; transform: translateY(0);}
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     section {
       margin-bottom: 44px;
       animation: fadeInSection 1.2s;
     }
     @keyframes fadeInSection {
-      from { opacity: 0;}
-      to { opacity: 1;}
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     h2 {
       border-left: 8px solid #6a0dad;
@@ -88,6 +88,7 @@
     }
     .table-scroll {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       margin-bottom: 8px;
     }
     table {
@@ -102,8 +103,8 @@
       animation: fadeInTable 1.3s;
     }
     @keyframes fadeInTable {
-      from { opacity: 0; transform: scale(0.98);}
-      to { opacity: 1; transform: scale(1);}
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
     }
     th, td {
       border: 1px solid #dbc6ef;
@@ -144,15 +145,15 @@
       animation: highlightPulse 2.2s infinite alternate;
     }
     @keyframes highlightPulse {
-      from { background: #fffbe6;}
-      to { background: #f8e9fd;}
+      from { background: #fffbe6; }
+      to { background: #f8e9fd; }
     }
     .fadein {
       opacity: 0;
       animation: fadeIn 1.2s forwards;
     }
     @keyframes fadeIn {
-      to { opacity: 1;}
+      to { opacity: 1; }
     }
     .tipBtn {
       display: inline-block;
@@ -172,14 +173,44 @@
       transform: scale(1.05);
       color: #fff;
     }
-    @media (max-width: 650px) {
-      main { padding: 7px 1vw 16px 1vw;}
-      h2 { font-size: 1em; }
-      th, td { font-size: 0.92em; padding: 8px 5px;}
-      .tipBtn { font-size: 0.93em; padding: 5px 10px; }
-      nav a { font-size: 0.98em; }
+    #member-colors input {
+      margin-bottom: 16px;
     }
-    #member-colors input { margin-bottom: 16px; }
+    /* スマホ対応 */
+    @media (max-width: 650px) {
+      header h1 {
+        font-size: 1.3em;
+      }
+      .highlight {
+        font-size: 0.92em;
+        padding: 6px 10px;
+      }
+      .fadein {
+        font-size: 0.95em;
+        line-height: 1.5;
+      }
+      .tipBtn {
+        font-size: 0.93em;
+        padding: 5px 10px;
+      }
+      nav a {
+        font-size: 0.98em;
+      }
+      #searchInput {
+        font-size: 0.95em;
+        padding: 8px;
+      }
+      main {
+        padding: 12px 4vw 24px 4vw;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      th, td {
+        font-size: 0.92em;
+        padding: 8px 5px;
+      }
+    }
   </style>
 </head>
 <body>
