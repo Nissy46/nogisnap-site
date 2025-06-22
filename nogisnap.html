@@ -184,7 +184,7 @@
   }
 
   /* スマホサイズ調整 */
-  @media (max-width: 650px) {
+    @media (max-width: 650px) {
     body {
       font-size: 14px;
     }
@@ -221,6 +221,15 @@
       font-size: 0.85em;
       padding: 6px 4px;
     }
+    td b {
+      font-size: 0.85em; /* スマホ表示時の太字テキストサイズを調整 */
+    }
+  }
+
+  /* 共通：太字テキストサイズをtd内で強制的に大きくしない */
+  td b {
+    font-size: inherit;
+    font-weight: bold;
   }
 </style>
 </head>
