@@ -184,57 +184,58 @@
   }
 
   /* スマホサイズ調整 */
-      @media (max-width: 650px) {
-    body {
-      font-size: 14px;
-    }
-    header h1 {
-      font-size: 1.2em;
-    }
-    .highlight {
-      font-size: 0.85em;
-      padding: 5px 8px;
-    }
-    .fadein {
-      font-size: 0.9em;
-      line-height: 1.5;
-    }
-    .tipBtn {
-      font-size: 0.9em;
-      padding: 4px 8px;
-    }
-    nav a {
-      font-size: 0.85em;
-      padding: 6px 10px;
-    }
-    #searchInput {
-      font-size: 0.9em;
-      padding: 7px;
-    }
-    main {
-      padding: 10px 3vw 20px 3vw;
-    }
-    h2 {
-      font-size: 0.95em;
-    }
-    th, td {
-      font-size: 0.85em;
-      padding: 6px 4px;
-    }
-    td b {
-      font-size: 0.85em; /* スマホ表示時の太字テキストサイズを調整 */
-    }
-    th {
-      font-size: 0.85em;
-      font-weight: bold;
-    }
+     @media (max-width: 650px) {
+  body {
+    font-size: 14px;
   }
-
-  /* 共通：太字テキストサイズをtd内で強制的に大きくしない */
-  td b {
-    font-size: inherit;
+  header h1 {
+    font-size: 1.2em;
+  }
+  .highlight {
+    font-size: 0.85em;
+    padding: 5px 8px;
+  }
+  .fadein {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .tipBtn {
+    font-size: 0.9em;
+    padding: 4px 8px;
+  }
+  nav a {
+    font-size: 0.85em;
+    padding: 6px 10px;
+  }
+  #searchInput {
+    font-size: 0.9em;
+    padding: 7px;
+  }
+  main {
+    padding: 10px 3vw 20px 3vw;
+  }
+  h2 {
+    font-size: 0.95em;
+  }
+  th, td {
+    font-size: 0.85em;
+    padding: 6px 4px;
+  }
+  th {
     font-weight: bold;
   }
+  td b,
+  td strong {
+    font-size: 0.85em; /* スマホ時の太字文字を制御 */
+  }
+}
+
+/* 共通：太字テキストが極端に大きくならないようにする */
+td b,
+td strong {
+  font-size: inherit;
+  font-weight: bold;
+}
 </style>
 </head>
 <body>
