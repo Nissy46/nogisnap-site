@@ -87,20 +87,22 @@
     table {
       border-collapse: collapse;
       width: 100%;
-      min-width: 430px;
+      min-width: 500px;
       margin-top: 10px;
       background: white;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(106,13,173,0.06);
+      table-layout: auto;
     }
     th, td {
       border: 1px solid #dbc6ef;
       padding: 12px 10px;
       text-align: left;
       font-size: 1em;
-      transition: background 0.2s;
-      word-break: break-word;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     th {
       background-color: #ede0f7;
@@ -193,13 +195,14 @@
         padding: 4px 8px;
       }
       table, th, td {
-        font-size: 13px !important;
-        white-space: normal !important;
-        word-break: break-word;
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       td b,
       td strong {
-        font-size: 13px !important;
+        font-size: 13px;
         font-weight: bold;
       }
     }
